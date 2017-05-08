@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lan="en">
+<head>
+<title>Car Pool</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="node_modules/angular-material/angular-material.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<link rel="stylesheet" href="css/angular.css">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body ng-app="MyApp" layout="column">
+ <md-toolbar ng-show="!showSearch" id="content" class="tool">
+         
+</md-toolbar>
+ <div class="container" layout="row" flex>
+   <md-sidenav md-is-locked-open="true" class="md-whiteframe-4dp">
+     <md-list>
+     	<md-list-item>
+     	    <md-button>
+     	         Dashboard
+     	 </md-button>
+       </md-list-item>
+       <md-list-item>
+       <md-button>
+         <md-icon md-svg-src="svg/avatar-4.svg" class="avatar"></md-icon>
+            My Carpool
+       </md-button>
+       </md-list-item>
+        <md-list-item>
+          <md-button>
+                  My Requests
+         </md-button>
+      </md-list-item>
+      <md-list-item>
+      <md-button>
+               About
+      </md-button>
+      </md-list-item>
+      <md-list-item>
+      <md-button>
+           Help
+      </md-button>
+      </md-list-item>
+      <md-list-item>
+      <md-button>
+               EcoBenefits
+      </md-button>
+      </md-list-item>
+      <md-list-item>
+      <md-button>
+                Stats
+      </md-button>
+      </md-list-item>
+      <md-list-item>
+       <md-button>
+                Allowed Users
+       </md-button>
+      </md-list-item>
+      <md-list-item>
+          <md-button>
+                 Users
+          </md-button>
+       </md-list-item>
+     </md-list>
+  </md-sidenav>
+<md-content id="content" class="lightgreen" flex>
+<input id="pac-input" class="controls" type="text" placeholder="Search Box">
+  <div id="map"></div>
+</md-content>
+</div>
+<script src="node_modules/angular/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
+<script src="node_modules/angular-animate/angular-animate.js"></script>
+<script src="node_modules/angular-aria/angular-aria.js"></script>
+<script src="node_modules/angular-material/angular-material.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_Zm3BCPleKFA7RkpaaymSRoYqHslWH3Y&libraries=places&callback=initAutocomplete"
+  async defer></script>
+<script src="javascript/app.js"></script>
+<script src="javascript/schneider.js"></script>
+</body>
+</html>
